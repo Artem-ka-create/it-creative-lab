@@ -1,0 +1,13 @@
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45vw;
+    height: 80px;
+
+}
+.navigation_item{
+    font-size:1em ;
+
+}
