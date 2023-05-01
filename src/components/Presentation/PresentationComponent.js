@@ -4,6 +4,7 @@ import styles from './Presentation.module.css';
 
 function PresentationComponent(){
 
+    console.log(3);
     const statistik=[
         {id:'1',numb:'3', name:'pocet rokov'},
         {id:'2',numb:'18', name:'IT Firmy'},
@@ -28,6 +29,7 @@ return(
       ))}
         </div> 
     </div>
+
     
 
 )

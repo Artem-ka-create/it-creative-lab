@@ -1,0 +1,47 @@
+
+.activityBox{
+    
+    height: 300px;
+    width: 1162px;
+    background: red;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: row;
+
+    
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    
+
+}
+.activityBoxItem{
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 170px;
+    border: 2px solid black;
+
+}
+.activityBoxItem_text{
+    height: 100%;
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: flex-start;
+    width: 170px;
+
+}
+.activityBoxItem_icon{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 170px;
+
+}
