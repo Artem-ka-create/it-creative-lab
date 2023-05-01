@@ -6,12 +6,12 @@ function HeaderComponent(){
 
 
     return (
-        <div style={{ display:'flex', alignItems:'center', justifyContent:'center'}}>
+        <div style={{ display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column', marginTop:'20px'}}>
             
-        <div style={{position:'absolute', left:0, display:'flex',transform:'translate(10%)', alignItems:'center', justifyContent:'space-between',width:'20%'}}>
-            <img style={{width:'2.620545073375262vw'}} src='./kosice_it_valley_logo.png' alt='kosice it valley logo in header'/>
-            <img style={{width:'9.433962264150944vw'}} src='./logo-ksk.png' alt='kosice it valley logo in header'/>
-            <img style={{width:'3.1446540880503147vw'}} src='./logo_fei2.png' alt='kosice it valley logo in header'/>
+        <div className={styles.navigation_logo_box}>
+            <img className={styles.logo_item} src='./kosice_it_valley_logo.png' alt='kosice it valley logo in header'/>
+            <img  className={styles.logo_width_item} src='./logo-ksk.png' alt='kosice it valley logo in header'/>
+            <img className={styles.logo_item} src='./logo_fei2.png' alt='kosice it valley logo in header'/>
 
 
 
