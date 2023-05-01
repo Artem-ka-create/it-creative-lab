@@ -1,4 +1,13 @@
 
+.projName{
+    position: absolute;
+    display: block;
+    transform: translateX(50%);
+    right: 50%;
+    top: 29%;
+    font-size: 80px;
+    color: #414056;  
+}
 
 .statisticBox{    
 
@@ -9,14 +18,28 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    padding: 50px 0 50px 0;
 
     margin: 0 auto;
 
 }
 .statisticBox_item{
-    margin-left: 200px;
+    margin-left: 10vw;
 }
+.number_box{ font-size: 6em ; }
+.stat_name_box{ font-size: 1.875em ; }
 
 .statisticBox_item:nth-child(1){
     margin-left: 0;
+}
+
+@media  (max-width: 765px) {
+  
+    .statisticBox{flex-direction: column;}
+    .statisticBox_item{margin-left: 0;}
+}
+@media  (max-width: 1024px) {
+  
+    .number_box{font-size: calc(6em * 0.75);}
+    .stat_name_box{font-size: calc(1.875em * 0.75);}
 }
