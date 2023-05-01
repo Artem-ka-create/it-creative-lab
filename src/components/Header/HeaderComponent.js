@@ -6,7 +6,7 @@ function HeaderComponent(){
 
 
     return (
-        <div style={{ display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column', marginTop:'20px'}}>
+        <div style={{ display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column', paddingTop:'20px'}}>
             
         <div className={styles.navigation_logo_box}>
             <img className={styles.logo_item} src='./kosice_it_valley_logo.png' alt='kosice it valley logo in header'/>
