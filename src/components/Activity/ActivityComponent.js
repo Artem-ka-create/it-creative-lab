@@ -1,63 +1,40 @@
 
 import styles from './Activity.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPeopleGroup,faFaceSmile, faMicrochip, faRobot, faLightbulb, faComments} from '@fortawesome/free-solid-svg-icons'
 
 function ActivityComponent(){
 
-
+    const activityArrList = [
+        {id:'1', text: 'communication', color:'#E75C5D',colorbackground:'#EFD472', element:<FontAwesomeIcon icon={faComments}/>},
+        {id:'2', text: 'idea', color:'#485BC5',  colorbackground:'#E75C5D',element:<FontAwesomeIcon icon={faLightbulb}/>},
+        {id:'3', text: 'create', color:'#EFD472', colorbackground:'#485BC5',element:<FontAwesomeIcon icon={faRobot}/>},
+        {id:'4', text: 'invent', color:'black', colorbackground:'#E75C5D', element:<FontAwesomeIcon icon={faPeopleGroup}/>},
+        {id:'5', text: 'technologies', color:'#FFFFFF', colorbackground:'#EFD472', element:<FontAwesomeIcon icon={faMicrochip}/>},
+        {id:'6', text: 'fun', color:'#E75C5D', colorbackground:'#485BC5', element:<FontAwesomeIcon icon={faFaceSmile}/>},
+    ];
 
     return (
 
-        <div className={styles.activityBox}>
-            <div className={styles.activityBoxItem}>
-                <div className={styles.activityBoxItem_text}>
-                    dewfewf
-                </div>
-                <div className={styles.activityBoxItem_icon}>
-                    dsdjhuifhiush
-                </div>
-                
-            </div>
-            <div className={styles.activityBoxItem}>
-                <div className={styles.activityBoxItem_text}>
-                    dewfewf
-                </div>
-                <div className={styles.activityBoxItem_icon}>
-                    dsdjhuifhiush
-                </div>
-            </div>
-            <div className={styles.activityBoxItem}>
-                <div className={styles.activityBoxItem_text}>
-                    dewfewf
-                </div>
-                <div className={styles.activityBoxItem_icon}>
-                    dsdjhuifhiush
-                </div>
-            </div>
-            <div className={styles.activityBoxItem}>
-                <div className={styles.activityBoxItem_text}>
-                    dewfewf
-                </div>
-                <div className={styles.activityBoxItem_icon}>
-                    dsdjhuifhiush
-                </div>
-            </div>
-            <div className={styles.activityBoxItem}>
-                <div className={styles.activityBoxItem_text}>
-                    dewfewf
-                </div>
-                <div className={styles.activityBoxItem_icon}>
-                    dsdjhuifhiush
-                </div>
-            </div>
-            <div className={styles.activityBoxItem}>
-                <div className={styles.activityBoxItem_text}>
-                    dewfewf
-                </div>
-                <div className={styles.activityBoxItem_icon}>
-                    dsdjhuifhiush
-                </div>
-            </div>
+        <div style={{marginTop:'100px'}}>
+            
+            <h1 style={{color:'#2E3058'}}>Myslenka projektu</h1>
+            <div className={styles.activityBox}>
+            
 
+                {activityArrList.map((item) => (
+
+                <div className={styles.activityBoxItem} style={{background: item.colorbackground}} key={item.id}>
+                    <div className={styles.activityBoxItem_text} style={{color: item.color}}>
+                        {item.text}
+                    </div>
+                    <div className={styles.activityBoxItem_icon} style={{color: item.color}}>
+                        {item.element}
+                    </div>
+
+                </div>
+                ))}
+            </div>
         </div>
     )
 }

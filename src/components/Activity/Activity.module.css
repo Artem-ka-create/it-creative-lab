@@ -1,40 +1,32 @@
 
 .activityBox{
     
-    height: 300px;
-    width: 1162px;
-    background: red;
-
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: center;
     flex-direction: row;
 
-    
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
-
-    
 
 }
 .activityBoxItem{
     padding: 10px;
-    height: 100%;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 170px;
-    border: 2px solid black;
 
 }
 .activityBoxItem_text{
     height: 100%;
     display: flex;
-    /* align-items: flex-start; */
+    font-size: 1.5em;
     justify-content: flex-start;
-    width: 170px;
+    width: 100%;
 
 }
 .activityBoxItem_icon{
@@ -42,6 +34,27 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 170px;
+    width: 100%;
+    font-size: 6em;
 
+}
+
+@media  (max-width: 1430px) {
+  
+    .activityBoxItem{ width: 125px;}
+    .activityBoxItem_text {  font-size: 1.2em;}
+    .activityBoxItem_icon{justify-content: center;}
+}
+@media  (max-width: 1024px) {
+    .activityBoxItem{ width: 100px;}
+    .activityBoxItem_text {  font-size: 0.9em;}
+    .activityBoxItem_icon{font-size: 5em;}
+}
+
+
+@media  (max-width: 765px) {
+  
+    .activityBox{flex-direction: column;}
+    .activityBoxItem{width: 100%;height: 140px;flex-direction: row;}
+    .activityBoxItem_text {  justify-content: center;font-size: 1.4em;}
 }
