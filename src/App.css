@@ -26,3 +26,35 @@ h1{
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.accordion {
+  width: 100%;
+}
+
+.item {
+  background: #EFD472;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+
+}
+
+.tittle{
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.content{
+  color: grey;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+  
+}
+.content.show{
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+}

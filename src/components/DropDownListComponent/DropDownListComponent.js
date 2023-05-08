@@ -1,44 +1,65 @@
 
 // import styles from './DropDownList.module.css';
-import { Accordion, AccordionTab } from 'primereact/accordion';
+// import { Accordion, AccordionTab } from 'primereact/accordion';
 import "primereact/resources/themes/lara-light-indigo/theme.css";     
+import "primereact/resources/primereact.min.css";       
+import './DropDownList.module.css'
+
+import { useState } from "react";
+
+function DropDownListComponent(){   
+
+    const [selected, setSelected] = useState(null);
+
+
+const toggle = i => {
     
-//core
-import "primereact/resources/primereact.min.css";                     
-
-function DropDownListComponent(){
-
-   
+    if(selected === i){
+        return setSelected(null);
+    }
+    
+    setSelected(i);
+}
 
     return (
 
-        <Accordion multiple activeIndex={[0]}>
-        <AccordionTab header="Header I">
-            <p className="m-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </AccordionTab>
-        <AccordionTab header="Header II">
-            <p className="m-0">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-                quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
-                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-                Consectetur, adipisci velit, sed quia non numquam eius modi.
-            </p>
-        </AccordionTab>
-        <AccordionTab header="Header III">
-            <p className="m-0">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-                quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
-                mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
-                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-            </p>
-        </AccordionTab>
-    </Accordion>
+        <div style={{marginBottom:'300px'}}> 
+            <div className="accordion">
+                { data.map((item,i)=> (
+                    <div className="item">
+                        <div className="tittle" onClick={() => toggle(i)}>
+                            <h2>{item.question}</h2>
+                            <span> {selected === i ? '-' : '+' }</span>
+                        </div>
+                        <div className={selected === i ? 'content show' : 'content' }>{item.answer}</div>
+                    </div>
+                ))}
+            </div>
+            
+        </div>
     )
 }
+const data = [
+    {
+        question : 'Question1',
+        answer : 'oidjqweoifweofoiwehoif\nhohfvwehoifweoifo\nwdwqiodjoijwoioiwfvuher'
+    },
+    {
+        question : 'Question2',
+        answer : 'oidjqweoifweofoiwehoifhohfvwehoifweoifowdwqiodjoijwoioiwfvuher'
+    },
+    {
+        question : 'Question3',
+        answer : 'oidjqweoifweofoiwehoifhohfvwehoifweoifowdwqiodjoijwoioiwfvuher'
+    },
+    {
+        question : 'Question4',
+        answer : 'oidjqweoifweofoiwehoifhohfvwehoifweoifowdwqiodjoijwoioiwfvuher'
+    },
+    {
+        question : 'Question5',
+        answer : 'oidjqweoifweofoiwehoifhohfvwehoifweoifowdwqiodjoijwoioiwfvuher'
+    },
+]
 
 export default DropDownListComponent;
