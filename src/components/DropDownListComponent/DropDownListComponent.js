@@ -26,8 +26,8 @@ const toggle = i => {
     return (
 
         <div style={{marginBottom:'300px'}}> 
-            <h3>dd</h3>
-            
+            <h1>Skoly</h1>
+
             <div className="accordion">
                 { data.map((item,i)=> (
                     <div key={i} className="item">
