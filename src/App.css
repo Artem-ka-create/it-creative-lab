@@ -28,6 +28,7 @@ h1{
 }
 
 .accordion {
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -42,19 +43,83 @@ h1{
 .tittle{
   color: black;
   display: flex;
+  padding: 0 100px 0 100px;
   justify-content: space-between;
   align-items: center;
 
+}
+.tittle_schoolNameBlock{
+  display:flex;
+  flex-direction:column;
+  width: 440px;
+}
+.tittle_schoolCityBlock{
+  display:flex;
+  flex-direction:column;
+  width: 150px;
+  margin-left: 20px;
+}
+
+.tittle_schoolNameBlock_tittle{
+  color: grey;
+  display: flex;
+  font-size: 14px;
+  justify-content: flex-start;
+}
+.tittle_schoolNameBlock_content{
+  color: black;
+  display: flex;
+  font-size: 20px;
+  justify-content: flex-start;
+  text-align: initial;
 }
 .content{
   color: grey;
   max-height: 0;
   overflow: hidden;
+  width: 100%;
+
+
   transition: all 0.5s cubic-bezier(0,1,0,1);
   
 }
+.contentBox{
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 30px 100px 30px 100px;
+
+}
+.contentBox_content{
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  text-align: initial;
+}
+.contentBox_description{
+
+  display: flex;
+
+  margin: 30px 100px 30px 100px;
+
+}
 .content.show{
   height: auto;
+  width: 100%;
   max-height: 9999px;
   transition: all 0.5s cubic-bezier(1,0,1,0);
+}
+
+@media  (max-width: 1430px) {
+  
+  
+  .tittle_schoolNameBlock_tittle{font-size: 12px;}
+  .tittle_schoolNameBlock_content{font-size: 16px;}
+  .contentBox_content{font-size: 14px;}
+}
+
+@media  (max-width: 765px) {
+.tittle{ padding: 0 3% 0 3%;}
+  .contentBox{margin: 30px 5% 30px 5%;}
 }

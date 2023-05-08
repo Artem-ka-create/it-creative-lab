@@ -6,6 +6,8 @@ import "primereact/resources/primereact.min.css";
 import './DropDownList.module.css'
 
 import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp, faChevronDown} from '@fortawesome/free-solid-svg-icons'
 
 function DropDownListComponent(){   
 
@@ -24,42 +26,59 @@ const toggle = i => {
     return (
 
         <div style={{marginBottom:'300px'}}> 
+            <h3>dd</h3>
+            
             <div className="accordion">
                 { data.map((item,i)=> (
-                    <div className="item">
+                    <div key={i} className="item">
                         <div className="tittle" onClick={() => toggle(i)}>
-                            <h2>{item.question}</h2>
-                            <span> {selected === i ? '-' : '+' }</span>
+                            <div className="tittle_schoolNameBlock">
+                                <p className="tittle_schoolNameBlock_tittle">Nazov</p>
+                                <div className="tittle_schoolNameBlock_content">{item.schoolName}</div>
+                            </div>
+                            <div className="tittle_schoolCityBlock">
+                                <p className="tittle_schoolNameBlock_tittle">Mesto</p>
+                                <div className="tittle_schoolNameBlock_content">{item.city}</div>
+                            </div>
+                            {selected === i ? <FontAwesomeIcon icon={faChevronUp}/> : <FontAwesomeIcon icon={faChevronDown}/> }
                         </div>
-                        <div className={selected === i ? 'content show' : 'content' }>{item.answer}</div>
+                        <div className={selected === i ? 'content show' : 'content' }>
+                            <div className="contentBox">
+                            <div className="tittle_schoolNameBlock_tittle">
+                                Popis
+                            </div>
+                            <div className="contentBox_content">
+                                {item.content}
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 ))}
             </div>
-            
         </div>
     )
 }
 const data = [
     {
-        question : 'Question1',
-        answer : 'oidjqweoifweofoiwehoif\nhohfvwehoifweoifo\nwdwqiodjoijwoioiwfvuher'
+        schoolName : 'Stredná odborná škola informačných technológií',
+        city : 'Kosice',
+        content : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut malesuada lorem. Duis varius nisl eget velit sagittis, vitae mollis velit finibus. Suspendisse varius lobortis lectus eget suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id vestibulum ipsum. Duis sit amet eros vitae nisi faucibus lobortis sit amet quis justo. Sed vitae nibh eu felis egestas suscipit. Quisque faucibus nunc nec leo mattis, non pellentesque est aliquet. Nullam bibendum accumsan odio vitae faucibus. Nulla eget viverra nunc, nec hendrerit nisl. Duis id erat sit amet leo iaculis placerat mollis ut ligula. Nunc vehicula risus non bibendum iaculis. Donec suscipit odio odio, et consequat arcu porta id. Fusce a risus pellentesque enim mollis ultricies. Donec ex libero, elementum vel ante eget, volutpat volutpat eros.'
     },
     {
-        question : 'Question2',
-        answer : 'oidjqweoifweofoiwehoifhohfvwehoifweoifowdwqiodjoijwoioiwfvuher'
+        schoolName : 'Spojená škola sv. košických mučeníkov',
+        city : 'Poprad',
+        content : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut malesuada lorem. Duis varius nisl eget velit sagittis, vitae mollis velit finibus. Suspendisse varius lobortis lectus eget suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id vestibulum ipsum. Duis sit amet eros vitae nisi faucibus lobortis sit amet quis justo. Sed vitae nibh eu felis egestas suscipit. Quisque faucibus nunc nec leo mattis, non pellentesque est aliquet. Nullam bibendum accumsan odio vitae faucibus. Nulla eget viverra nunc, nec hendrerit nisl. Duis id erat sit amet leo iaculis placerat mollis ut ligula. Nunc vehicula risus non bibendum iaculis. Donec suscipit odio odio, et consequat arcu porta id. Fusce a risus pellentesque enim mollis ultricies. Donec ex libero, elementum vel ante eget, volutpat volutpat eros.'
     },
     {
-        question : 'Question3',
-        answer : 'oidjqweoifweofoiwehoifhohfvwehoifweoifowdwqiodjoijwoioiwfvuher'
+        schoolName : 'Stredné Odborné Učilište Pôšt A Telekomunikácií',
+        city : 'Presov',
+        content : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut malesuada lorem. Duis varius nisl eget velit sagittis, vitae mollis velit finibus. Suspendisse varius lobortis lectus eget suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id vestibulum ipsum. Duis sit amet eros vitae nisi faucibus lobortis sit amet quis justo. Sed vitae nibh eu felis egestas suscipit. Quisque faucibus nunc nec leo mattis, non pellentesque est aliquet. Nullam bibendum accumsan odio vitae faucibus. Nulla eget viverra nunc, nec hendrerit nisl. Duis id erat sit amet leo iaculis placerat mollis ut ligula. Nunc vehicula risus non bibendum iaculis. Donec suscipit odio odio, et consequat arcu porta id. Fusce a risus pellentesque enim mollis ultricies. Donec ex libero, elementum vel ante eget, volutpat volutpat eros.'
     },
     {
-        question : 'Question4',
-        answer : 'oidjqweoifweofoiwehoifhohfvwehoifweoifowdwqiodjoijwoioiwfvuher'
-    },
-    {
-        question : 'Question5',
-        answer : 'oidjqweoifweofoiwehoifhohfvwehoifweoifowdwqiodjoijwoioiwfvuher'
-    },
+        schoolName : 'SOS Jozefa Szakkayho',
+        city : 'Bratislava',
+        content : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut malesuada lorem. Duis varius nisl eget velit sagittis, vitae mollis velit finibus. Suspendisse varius lobortis lectus eget suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id vestibulum ipsum. Duis sit amet eros vitae nisi faucibus lobortis sit amet quis justo. Sed vitae nibh eu felis egestas suscipit. Quisque faucibus nunc nec leo mattis, non pellentesque est aliquet. Nullam bibendum accumsan odio vitae faucibus. Nulla eget viverra nunc, nec hendrerit nisl. Duis id erat sit amet leo iaculis placerat mollis ut ligula. Nunc vehicula risus non bibendum iaculis. Donec suscipit odio odio, et consequat arcu porta id. Fusce a risus pellentesque enim mollis ultricies. Donec ex libero, elementum vel ante eget, volutpat volutpat eros.'
+    }
 ]
 
 export default DropDownListComponent;
