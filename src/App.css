@@ -123,3 +123,53 @@ h1{
 .tittle{ padding: 0 3% 0 3%;}
   .contentBox{margin: 30px 5% 30px 5%;}
 }
+
+
+.carousel {
+  height: 600px;
+
+}
+.product--image {
+  width: 100%;
+  height: 16em;
+  padding: 20px;
+  object-fit: cover;
+}
+
+.card {
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+  width: 300px;
+  margin: auto 1rem;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: grey;
+  font-size: 16px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  height: 50px;
+  /* width: 100%; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+}
+
+.card button:hover {
+  transition: 0.2s;
+  color: #EFD472;
+}
