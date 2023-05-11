@@ -143,6 +143,7 @@ h1{
   margin: auto 1rem;
   text-align: center;
   font-family: arial;
+  margin-bottom: 20px;
 }
 
 .price {
@@ -172,4 +173,11 @@ h1{
 .card button:hover {
   transition: 0.2s;
   color: #EFD472;
+}
+
+.dialogClass {
+  background: var(--surface-card);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
