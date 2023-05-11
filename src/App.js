@@ -7,7 +7,7 @@ import "primereact/resources/primereact.min.css";
 // import HeaderComponent from './components/Header/HeaderComponent';
 import PresentationComponent from './components/Presentation/PresentationComponent';
 import ActivityComponent from './components/Activity/ActivityComponent';
-// import DropDownListComponent from './components/DropDownListComponent/DropDownListComponent';
+import DropDownListComponent from './components/DropDownListComponent/DropDownListComponent';
 import CarouselComponent from './components/Carousel/CarouselComponent';
 import FooterComponent from './components/FooterComponent/FooterComponent';
 
@@ -17,7 +17,7 @@ function App() {
     <div className="App">
      <PresentationComponent/>
      <ActivityComponent/>
-     {/* <DropDownListComponent/> */}
+     <DropDownListComponent/>
      <CarouselComponent  />
      <FooterComponent/>
      
