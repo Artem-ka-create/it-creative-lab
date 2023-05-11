@@ -6,12 +6,12 @@ import { faPeopleGroup,faFaceSmile, faMicrochip, faRobot, faLightbulb, faComment
 function ActivityComponent(){
 
     const activityArrList = [
-        {id:'1', text: 'communication', color:'#E75C5D',colorbackground:'#EFD472', element:<FontAwesomeIcon icon={faComments}/>},
-        {id:'2', text: 'idea', color:'#485BC5',  colorbackground:'#E75C5D',element:<FontAwesomeIcon icon={faLightbulb}/>},
-        {id:'3', text: 'create', color:'#EFD472', colorbackground:'#485BC5',element:<FontAwesomeIcon icon={faRobot}/>},
-        {id:'4', text: 'invent', color:'black', colorbackground:'#E75C5D', element:<FontAwesomeIcon icon={faPeopleGroup}/>},
-        {id:'5', text: 'technologies', color:'#FFFFFF', colorbackground:'#EFD472', element:<FontAwesomeIcon icon={faMicrochip}/>},
-        {id:'6', text: 'fun', color:'#E75C5D', colorbackground:'#485BC5', element:<FontAwesomeIcon icon={faFaceSmile}/>},
+        {id:'1', text: 'communication', color:'#485BC5',colorbackground:'#EFD472', element:<FontAwesomeIcon icon={faComments}/>},
+        {id:'2', text: 'idea', color:'#EFD472',  colorbackground:'#485BC5',element:<FontAwesomeIcon icon={faLightbulb}/>},
+        {id:'3', text: 'create', color:'#485BC5', colorbackground:'#EFD472',element:<FontAwesomeIcon icon={faRobot}/>},
+        {id:'4', text: 'invent', color:'#EFD472', colorbackground:'#485BC5', element:<FontAwesomeIcon icon={faPeopleGroup}/>},
+        {id:'5', text: 'technologies', color:'#485BC5', colorbackground:'#EFD472', element:<FontAwesomeIcon icon={faMicrochip}/>},
+        {id:'6', text: 'fun', color:'#EFD472', colorbackground:'#485BC5', element:<FontAwesomeIcon icon={faFaceSmile}/>},
     ];
 
     return (

@@ -1,0 +1,48 @@
+.contentBox{
+    height:400px;
+    width:100%;
+    background: #292a4f
+}
+.contentBoxContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.contentBoxItemNav{
+
+    color: white;
+    width: 33%;
+    font-size: 1em;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.contentBoxItemNav p{
+
+    width: 33%;
+   
+    margin: 13px;
+   
+}
+.contentBoxItemLogo{
+    width: 33%;
+}
+.contentBoxItemKontant{
+    display: flex;
+    width: 33%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 95px;
+    
+
+}
+.contentBoxItemKontant img{
+    width: 30px;
+    height: 30px;
+    
+
+}
