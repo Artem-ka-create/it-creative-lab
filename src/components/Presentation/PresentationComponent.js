@@ -6,10 +6,10 @@ function PresentationComponent(){
 
     console.log(3);
     const statistik=[
-        {id:'1',numb:'3', name:'pocet rokov'},
-        {id:'2',numb:'18', name:'IT Firmy'},
-        {id:'3',numb:'14', name:'partnety'},
-        {id:'4',numb:'3', name:'organizatory'}
+        {id:'1',numb:'2', name:'roky'},
+        {id:'2',numb:'7', name:'firiem'},
+        {id:'3',numb:'22', name:'projektov'},
+        {id:'4',numb:'10', name:'Gymnázií'}
 
     ]
 
