@@ -11,6 +11,7 @@ import DropDownListComponent from './components/DropDownListComponent/DropDownLi
 import CarouselComponent from './components/Carousel/CarouselComponent';
 import FooterComponent from './components/FooterComponent/FooterComponent';
 import GalleriaComponent from './components/Galleria/GalleriaComponent';
+import VideoPlayer from './components/VideoPlayerComponent/VideoPlayerComponent';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
      <DropDownListComponent/>
      <CarouselComponent  />
      <GalleriaComponent/>
+     <VideoPlayer/>
      <FooterComponent/>
      
 
