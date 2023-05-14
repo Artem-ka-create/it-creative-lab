@@ -10,6 +10,7 @@ import ActivityComponent from './components/Activity/ActivityComponent';
 import DropDownListComponent from './components/DropDownListComponent/DropDownListComponent';
 import CarouselComponent from './components/Carousel/CarouselComponent';
 import FooterComponent from './components/FooterComponent/FooterComponent';
+import GalleriaComponent from './components/Galleria/GalleriaComponent';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
      <ActivityComponent/>
      <DropDownListComponent/>
      <CarouselComponent  />
+     <GalleriaComponent/>
      <FooterComponent/>
      
 
