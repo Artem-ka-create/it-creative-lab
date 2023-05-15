@@ -27,9 +27,9 @@ function FooterComponent(){
                 <div className={styles.contentBoxContainer}>
                     
                     <div className={styles.contentBoxItemLogo}>
-                    <img  className={styles.longLogo} src='itValleyNewLogo.png' alt='itValleyNewLogo'/>
-                    <img  className={styles.longLogo} src='FEINewLogo.png' alt='FEINewLogo'/>
-                    <img  className={styles.shortLogo} src='ITCreativeLab.png' alt='ITCreativeLab'/>
+                    <img  className={styles.longLogo} src='itValleyNewLogo.svg' alt='itValleyNewLogo'/>
+                    <img  className={styles.longLogo} src='FEINewLogo.svg' alt='FEINewLogo'/>
+                    <img  className={styles.shortLogo} src='ITCreativeLab.svg' alt='ITCreativeLab'/>
                 
                     </div>
                     <div className={styles.contentBoxItemNav}>
