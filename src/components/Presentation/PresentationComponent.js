@@ -1,8 +1,7 @@
 
-import zIndex from '@mui/material/styles/zIndex';
 import HeaderComponent from '../Header/HeaderComponent';
 import styles from './Presentation.module.css';
-import { useState, useEffect } from 'react';
+import {useEffect } from 'react';
 
 function PresentationComponent(){
 
@@ -16,7 +15,6 @@ function PresentationComponent(){
     ]
 
 
-    const [scrollTop, setScrollTop] = useState(0);
 
     useEffect(() => {
         let text = document.getElementById('text');
@@ -24,15 +22,13 @@ function PresentationComponent(){
     let mt4 = document.getElementById('mt4');
     let mt3 = document.getElementById('mt3');
     let mt2 = document.getElementById('mt2');
-    let mt1 = document.getElementById('mt1');
      console.log(text);
     window.addEventListener('scroll', function(event){
-        console.log(mt5.style);
-        // console.log(text.style);
-        // console.log(value);
-        // console.log(window.scrollY);
-        // mt3.style = window.scrollY/2 + 'px'
-        // mt5.style.marginLeft = window.scrollY/2 + 'px'
+
+        mt5.style.bottom = -window.scrollY/8 + 'px';
+        mt2.style.bottom = -window.scrollY/3 + 'px';
+        mt4.style.bottom = -window.scrollY/4 + 'px';
+        mt3.style.bottom = -window.scrollY/6 + 'px';
         text.style.top = window.scrollY +2 + 'px';
     });
       }, []);

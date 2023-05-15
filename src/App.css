@@ -213,7 +213,7 @@ section{
   font-size: 7.5vw;
   z-index: -3;
   top: 0;
-  transform: translateY(-30px);
+  transform: translateY(-40px);
   
 }
 section img{
@@ -243,4 +243,5 @@ section img{
 
 #mt5{
   z-index: -6;
+  padding-left: 30px;
 }
