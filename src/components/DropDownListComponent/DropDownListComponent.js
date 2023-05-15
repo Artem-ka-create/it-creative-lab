@@ -1,6 +1,4 @@
 
-// import styles from './DropDownList.module.css';
-// import { Accordion, AccordionTab } from 'primereact/accordion';
 import "primereact/resources/themes/lara-light-indigo/theme.css";     
 import "primereact/resources/primereact.min.css";       
 import './DropDownList.module.css'

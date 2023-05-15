@@ -1,5 +1,3 @@
-
-// import styles from './Galleria.module.css'
 import React, { useState, useEffect } from 'react';
 import { Galleria } from 'primereact/galleria';
 import { PhotoService } from './PhotoService';
