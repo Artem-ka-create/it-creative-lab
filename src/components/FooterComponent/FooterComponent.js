@@ -1,6 +1,5 @@
 
 import styles from './Footer.module.css';
-import {useEffect,useState} from 'react';
 import {} from '@fortawesome/free-solid-svg-icons';
 
 function FooterComponent(){
