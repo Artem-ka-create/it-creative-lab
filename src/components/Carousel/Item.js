@@ -12,7 +12,7 @@ function Item( property ){
     const [visible, setVisible] = useState(false);
     const footerContent = (
         <div>
-            <Button label="Close" icon="pi pi-check" onClick={() => setVisible(false)} autoFocus />
+            <Button label="Close" onClick={() => setVisible(false)} autoFocus />
         </div>
     );
 
