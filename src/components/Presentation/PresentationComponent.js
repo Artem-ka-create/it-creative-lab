@@ -1,4 +1,5 @@
 
+import zIndex from '@mui/material/styles/zIndex';
 import HeaderComponent from '../Header/HeaderComponent';
 import styles from './Presentation.module.css';
 import { useState, useEffect } from 'react';
@@ -36,19 +37,22 @@ function PresentationComponent(){
       }, []);
 
 return(
-    <div style={{background:'#EFD472'}}>
+    <div style={{background:'#EFD472', position:"relative", zIndex:"-10"}}>
         <HeaderComponent/>
-        <h1 className={styles.projName }>IT Creative Lab</h1>
+        {/* <h1 className={styles.projName }>IT Creative Lab</h1> */}
         {/* <img style={{width:'100%',display:"block"}}src='mountainsDemo.svg' alt='mountainsDemo'/> */}
-        
-        <section>
-                <img src='mountainSVG/mt5.svg' id='mt5' alt='mt5'/>
-                <img src='mountainSVG/mt4.svg' id='mt4' alt='mt4'/>
-                <img src='mountainSVG/mt3.svg' id='mt3' alt='mt3'/>
-                <h2 id='text'>TEXT</h2>
-                <img src='mountainSVG/mt2.svg' id='mt2' alt='mt2'/>
-                <img src='mountainSVG/mt1.svg' id='mt1' alt='mt1'/>
-        </section>
+        <div className={styles.prlxMRGN}>
+            <section>
+                    <img src='mountainSVG/mt5.svg' id='mt5' alt='mt5'/>
+                    <h2 id='text'>TEXT</h2>
+
+                    <img src='mountainSVG/mt4.svg' id='mt4' alt='mt4'/>
+                    <img src='mountainSVG/mt3.svg' id='mt3' alt='mt3'/>
+                    <img src='mountainSVG/mt2.svg' id='mt2' alt='mt2'/>
+                    <img src='mountainSVG/mt1.svg' id='mt1' alt='mt1'/>
+            </section>
+        </div>
+       
 
 
 

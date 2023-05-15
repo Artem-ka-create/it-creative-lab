@@ -211,8 +211,9 @@ section{
   color: white;
   white-space: nowrap;
   font-size: 7.5vw;
-  z-index: 4;
+  z-index: -3;
   top: 0;
+  transform: translateY(-30px);
   
 }
 section img{
@@ -225,21 +226,21 @@ section img{
 }
 
 #mt1{
-  z-index: 6;
+  z-index: -1;
 }
 
 #mt2{
-  z-index: 5;
+  z-index: -2;
 }
 
 #mt3{
-  z-index: 3;
+  z-index: -4;
 }
 
 #mt4{
-  z-index: 2;
+  z-index: -5;
 }
 
 #mt5{
-  z-index: 1;
+  z-index: -6;
 }

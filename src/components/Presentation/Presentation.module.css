@@ -34,10 +34,14 @@
 .statisticBox_item:nth-child(1){
     margin-left: 0;
 }
+.prlxMRGN{
+    margin-top: 150px;
+}
 
 @media  (max-width: 1430px) {
   
     .projName{ font-size: 55px;top: 170px;}
+    .prlxMRGN{ margin-top: 100px;}
 }
 @media  (max-width: 1024px) {
   
@@ -52,6 +56,7 @@
     .statisticBox{flex-direction: column;}
     .statisticBox_item{margin-left: 0;}
     .projName{ font-size: 34px;top: 290px;}
+    .prlxMRGN{ margin-top: 50px;}
 }
 @media  (max-width: 475px) {
   
