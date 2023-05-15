@@ -1,6 +1,7 @@
 
 import HeaderComponent from '../Header/HeaderComponent';
 import styles from './Presentation.module.css';
+import { useState, useEffect } from 'react';
 
 function PresentationComponent(){
 
@@ -13,12 +14,45 @@ function PresentationComponent(){
 
     ]
 
+
+    const [scrollTop, setScrollTop] = useState(0);
+
+    useEffect(() => {
+        let text = document.getElementById('text');
+    let mt5 = document.getElementById('mt5');
+    let mt4 = document.getElementById('mt4');
+    let mt3 = document.getElementById('mt3');
+    let mt2 = document.getElementById('mt2');
+    let mt1 = document.getElementById('mt1');
+     console.log(text);
+    window.addEventListener('scroll', function(event){
+        // console.log(text.style);
+        // console.log(value);
+        // console.log(window.scrollY);
+
+
+        text.style.top = window.scrollY +2 + 'px';
+    });
+      }, []);
+
 return(
     <div style={{background:'#EFD472'}}>
         <HeaderComponent/>
         <h1 className={styles.projName }>IT Creative Lab</h1>
-        <img style={{width:'100%',display:"block"}}src='mountainsDemo.svg' alt='mountainsDemo'/>
+        {/* <img style={{width:'100%',display:"block"}}src='mountainsDemo.svg' alt='mountainsDemo'/> */}
         
+        <section>
+                <img src='mountainSVG/mt5.svg' id='mt5' alt='mt5'/>
+                <img src='mountainSVG/mt4.svg' id='mt4' alt='mt4'/>
+                <img src='mountainSVG/mt3.svg' id='mt3' alt='mt3'/>
+                <h2 id='text'>TEXT</h2>
+                <img src='mountainSVG/mt2.svg' id='mt2' alt='mt2'/>
+                <img src='mountainSVG/mt1.svg' id='mt1' alt='mt1'/>
+        </section>
+
+
+
+
         <div className={styles.statisticBox}>
         {statistik.map((item) => (
 

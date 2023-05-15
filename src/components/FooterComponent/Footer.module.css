@@ -10,7 +10,9 @@
 .contentBox{
     height:650px;
     width:100%;
-    background: #292a4f;
+    background: #2E3058;
+    position: relative;
+    padding: 100px;
 }
 .contentBoxContainer{
     width: 100%;

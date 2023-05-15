@@ -197,3 +197,49 @@ justify-content: center; */
   align-items: center;
   justify-content: center;
 }
+
+section{
+  position: relative;
+  width: 100vw;
+  height: 23.572vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#text{
+  position: absolute;
+  color: white;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 4;
+  top: 0;
+  
+}
+section img{
+  position: absolute;
+  /* top: 0; */
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  object-fit: cover;
+}
+
+#mt1{
+  z-index: 6;
+}
+
+#mt2{
+  z-index: 5;
+}
+
+#mt3{
+  z-index: 3;
+}
+
+#mt4{
+  z-index: 2;
+}
+
+#mt5{
+  z-index: 1;
+}
