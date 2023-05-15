@@ -27,11 +27,12 @@ function PresentationComponent(){
     let mt1 = document.getElementById('mt1');
      console.log(text);
     window.addEventListener('scroll', function(event){
+        console.log(mt5.style);
         // console.log(text.style);
         // console.log(value);
         // console.log(window.scrollY);
-
-
+        // mt3.style = window.scrollY/2 + 'px'
+        // mt5.style.marginLeft = window.scrollY/2 + 'px'
         text.style.top = window.scrollY +2 + 'px';
     });
       }, []);
@@ -39,12 +40,13 @@ function PresentationComponent(){
 return(
     <div style={{background:'#EFD472', position:"relative", zIndex:"-10"}}>
         <HeaderComponent/>
-        {/* <h1 className={styles.projName }>IT Creative Lab</h1> */}
+        {/*  */}
         {/* <img style={{width:'100%',display:"block"}}src='mountainsDemo.svg' alt='mountainsDemo'/> */}
         <div className={styles.prlxMRGN}>
             <section>
                     <img src='mountainSVG/mt5.svg' id='mt5' alt='mt5'/>
-                    <h2 id='text'>TEXT</h2>
+                    <h2 id='text' >IT Creative Lab</h2>
+                    {/* <h2 id='text' className={styles.projName }>IT Creative Lab</h2> */}
 
                     <img src='mountainSVG/mt4.svg' id='mt4' alt='mt4'/>
                     <img src='mountainSVG/mt3.svg' id='mt3' alt='mt3'/>
