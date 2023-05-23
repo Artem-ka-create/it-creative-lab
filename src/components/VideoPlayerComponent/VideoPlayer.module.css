@@ -5,11 +5,10 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    /* width: 100%; */
     
     overflow: hidden;
     
-    width: 93.750vw;
+    /* width: 93.750vw; */
     max-width: 800px;
     height: 50vw;
     max-height: 400px;
@@ -28,7 +27,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 93.750vw;
+    /* width: 93.750vw; */
+    width: 100%;
     max-width: 800px;
     height: 50vw;
     max-height: 400px;
