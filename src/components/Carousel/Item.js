@@ -33,11 +33,15 @@ function Item( property ){
 
         <div className="dialogClass flex justify-content-center">
             <Dialog draggable={false} header={property.item.name} visible={visible} style={{ width: '80vw', height:'700px' }} onHide={() => setVisible(false)} footer={footerContent}>
-                <p className="m-0">
-                    {property.item.description}
-                </p>
+                <div style={{margin:'20px'}}>
+                    <p className="m-0">
+                        <b>Description:</b> <br/>
+                        {property.item.description}
+                    </p>
 
-                <VideoPlayer/>
+                    <VideoPlayer/>
+                </div>
+                
 
             </Dialog>
         </div>
