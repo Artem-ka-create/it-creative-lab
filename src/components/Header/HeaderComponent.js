@@ -1,33 +1,79 @@
 
 import styles from './Header.module.css';
+import { Link } from "react-scroll";
 
-function HeaderComponent(){
+function HeaderComponent() {
 
 
     return (
-        <div style={{ display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column', paddingTop:'20px'}}>
-            
-        <div className={styles.navigation_logo_box}>
-            {/* <img className={styles.logo_item} src='./kosice_it_valley_logo.png' alt='kosice it valley logo in header'/>
+        <div style={{ display: 'flex', alignItems: 'center', background: '#EFD472', justifyContent: 'center', flexDirection: 'column', paddingTop: '20px' }}>
+
+            <div className={styles.navigation_logo_box}>
+                {/* <img className={styles.logo_item} src='./kosice_it_valley_logo.png' alt='kosice it valley logo in header'/>
             <img  className={styles.logo_width_item} src='./logo-ksk.png' alt='kosice it valley logo in header'/>
             <img className={styles.logo_item} src='./logo_fei2.png' alt='kosice it valley logo in header'/> */}
 
             </div>
-            <div className={styles.navigation}>
-                <div className={styles.navigation_item}>
-                    Uvod
+            <div className={styles.navigation} >
+                <div className={styles.navigation_item} id='uvod'>
+
+                    <Link
+                        activeClass="active"
+                        to="uvod"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={200}>
+                        <p className='naviText'>Uvod</p>
+                    </Link>
                 </div>
                 <div className={styles.navigation_item}>
-                    Nase pojekty
+                    <Link
+                        activeClass="active"
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={200}>
+                        <p className='naviText'>Nase pojekty</p>
+
+                    </Link>
                 </div>
                 <div className={styles.navigation_item}>
-                    Galeria
+                    <Link
+                        activeClass="active"
+                        to="galeria"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={200}>
+
+                        <p className='naviText'>Galeria</p>
+                    </Link>
                 </div>
                 <div className={styles.navigation_item}>
-                    Kontakty
+                    <Link
+                        activeClass="active"
+                        to="footer"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={200}>
+
+                        <p className='naviText'>Kontakty</p>
+                    </Link>
                 </div>
                 <div className={styles.navigation_item}>
-                    Skoly a firmy
+                    <Link
+                        activeClass="active"
+                        to="schoolsFirms"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={200}>
+
+                        <p className='naviText'>Skoly a firmy</p>
+                    </Link>
                 </div>
             </div>
 

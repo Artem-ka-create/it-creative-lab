@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
+import VideoPlayer from '../VideoPlayerComponent/VideoPlayerComponent';
 
 
 
@@ -35,6 +36,9 @@ function Item( property ){
                 <p className="m-0">
                     {property.item.description}
                 </p>
+
+                <VideoPlayer/>
+
             </Dialog>
         </div>
         </>

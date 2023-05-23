@@ -35,8 +35,9 @@ function PresentationComponent(){
 
 return(
     <div style={{background:'#EFD472', position:"relative", zIndex:"-10"}}>
-        <HeaderComponent/>
-        {/*  */}
+        {
+            <div style={{padding:' 30px 0 0 0'}}></div>
+        }
         {/* <img style={{width:'100%',display:"block"}}src='mountainsDemo.svg' alt='mountainsDemo'/> */}
         <div className={styles.prlxMRGN}>
             <section>

@@ -65,8 +65,8 @@ function CarouselComponent(){
 
     return(
     
-          <div style={{marginBottom:'100px'}}>
-            <h1 style={{color:'#2E3058'}} >Nase projekty</h1> 
+          <div style={{marginBottom:'100px'}}  id='projects' >
+            <h1 style={{color:'#2E3058'}}>Nase projekty</h1> 
             <Carousel   containerClass="carousel" responsive={responsive}>
               {projectData.map((item,k) => {
                 console.log(item);

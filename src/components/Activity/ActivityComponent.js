@@ -16,7 +16,7 @@ function ActivityComponent(){
 
     return (
 
-        <div style={{paddingTop:'100px', zIndex:'10', position:'relative', backgroundColor:'white'}}>
+        <div style={{paddingTop:'100px', zIndex:'10', position:'relative', backgroundColor:'white'}} id='uvod'>
             
             <h1 style={{color:'#2E3058'}}>Myslenka projektu</h1>
             <div className={styles.activityBox}>

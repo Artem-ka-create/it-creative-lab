@@ -23,7 +23,7 @@ const toggle = i => {
 
     return (
 
-        <div style={{marginBottom:'100px'}}> 
+        <div style={{marginBottom:'100px'}} id="schoolsFirms"> 
             <h1 style={{color:'#2E3058'}} >Skoly</h1> 
 
             <div className="accordion">

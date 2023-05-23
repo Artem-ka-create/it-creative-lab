@@ -35,7 +35,7 @@ function GalleriaComponent(){
     }
 
     const thumbnailTemplate = (item) => {
-        return <img src={item.thumbnailImageSrc} alt={item.alt} style={{ display: 'block' }} />
+        return <img src={item.thumbnailImageSrc} alt={item.alt} style={{ display: 'block' , height:'50px'}} />
     }
 
 
