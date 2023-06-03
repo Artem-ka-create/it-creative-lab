@@ -26,6 +26,8 @@ function App() {
      <DropDownListComponent/>
      <CarouselComponent  />
      <div id='galeria'>
+     <h1 style={{ color: '#2E3058' }}>Galeria</h1>
+
         <GalleriaComponent />
      </div>
      <FooterComponent/>

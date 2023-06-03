@@ -35,7 +35,7 @@ function CarouselComponent() {
       description:
         <>
           <br></br>
-          "Východisko:   Škola získala v rámci projektu ""Ekologicky sa zeleniť, je časom overený hit""  realizovaného cez Nórske fondy prostriedky na realizáciu permakultúrnej záhrady, ktorá sa nachádza v areáli školy.  Jej súčasťou sú nádoby na zber ďažďovej vody, vyvýšené záhony s rôznymi typmi rastlín.
+          Východisko:   Škola získala v rámci projektu "Ekologicky sa zeleniť, je časom overený hit"  realizovaného cez Nórske fondy prostriedky na realizáciu permakultúrnej záhrady, ktorá sa nachádza v areáli školy.  Jej súčasťou sú nádoby na zber ďažďovej vody, vyvýšené záhony s rôznymi typmi rastlín.
 
           <br></br>Cieľ projektu: Realizovať inteligentnú školskú záhradu, vybrať a inštalovať vhodné senzory.   Vytvoriť jednoduchú aplikáciu, v ktorej budú môcť používatelia získať údaje o prostredí v záhrade v reálnom čase, ako je napríklad momentálna teplota a vlhkosť v jednotlivých častiach s rôznymi typmi rastlín.
           <br></br>Nainštalovať kameru – resp. fotopascu v kritických oblastiach, ktoré je potrebné monitorovať napr. proti vandalom a iným neželaným návštevníkom.  Projekt je náročnejší aj finančne vzhľadom na to, že je potrebné vyriešiť napájanie zariadení a pripojenie k internetu .
@@ -59,7 +59,7 @@ function CarouselComponent() {
     {
       name: 'Mobilná aplikácia - testy na autoškolu',
       schoolName: 'Gymnázium Trebišovská ',
-      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
+      imageTitul:'./projects/autoSchool/schoolTests.jpeg',
       description:
         <>
           <br></br>
@@ -69,11 +69,11 @@ function CarouselComponent() {
     {
       name: 'Kvalita vzduchu v učebniach',
       schoolName: 'Gymnázium, Komenského 32',
-      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
+      imageTitul:'./projects/oxygenInCLassrooms/oxygen-tank.svg',
       description:
         <>
           <br></br>
-          "Cieľom projektu je vytvorenie aplikácie, ktorá by bola využiteľné v bežnom živote školy Hnacím motorom pre zapojenie je vyskúšať nové možnosti, naučiť sa spolupracovať v tíme a získať nové, zaujímavé poznatky a zručnosti od ľudí z praxe.
+          Cieľom projektu je vytvorenie aplikácie, ktorá by bola využiteľné v bežnom živote školy Hnacím motorom pre zapojenie je vyskúšať nové možnosti, naučiť sa spolupracovať v tíme a získať nové, zaujímavé poznatky a zručnosti od ľudí z praxe.
           <br></br>Tím: Ervín Karvaš a Iveta Lešková
           <br></br>Vytvorenie aplikácie, ktorá by merala kvalitu vzduchu, teplotu vzduchu, vlhkosť, baktérie...
           <br></br>v učebniach pomocou senzorov na kvalitu vzduchu. V aplikácii by sa dali pozrieť vybrané učebne (podľa poctu senzorov) a informácie o nich. Aplikácia by zaslala hlásenie používateľovi v prípade, že by kvalita vzduchu nebola dobra (upozornenie na vyvetranie a podobne) Cena za senzor cca 50 eur
@@ -82,10 +82,10 @@ function CarouselComponent() {
     {
       name: 'Chémia jednoduchšie',
       schoolName: 'Gymnázium, Komenského 32',
-      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
+      imageTitul:'./projects/easyChemistry/TubeLab.png',
       description: <>
         <br></br>
-        "Tím: Ivo Micišin, Patrik Ragan, Dávid Toma, René Demjan, Matej Janok<br></br>
+        Tím: Ivo Micišin, Patrik Ragan, Dávid Toma, René Demjan, Matej Janok<br></br>
 
         <br></br>Táto aplikácia by slúžila ako učebná pomôcka, vďaka ktorej by bolo zobrazenie chemických väzieb jednoduchšie. Zobrazenie týchto väzieb pomocou 3D modelov by bolo prehľadnejšie a nápomocné aj pre študentov s horšou priestorovou predstavivosťou. V aplikácii by sa nachádzala ponuka prvkov, ktoré by sa dali filtrovať a následne vybrať presne ten, ktorý potrebujeme.
         <br></br>
@@ -102,17 +102,17 @@ function CarouselComponent() {
     {
       name: 'Fitko v mobile',
       schoolName: 'Gymnázium Pavla Horova, Masarykova 1, Michalovce',
-      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
+      imageTitul:'./projects/fitApp/fitApp.png',
       description: <>
         <br></br>
-        "Cieľom nášho projektu je 3D vizualizácia fitka, rozmiestnenie  a návod na použitie strojov, ktoré sa nachádzajú vo fitness centre.
+        Cieľom nášho projektu je 3D vizualizácia fitka, rozmiestnenie  a návod na použitie strojov, ktoré sa nachádzajú vo fitness centre.
         <br></br>Členovia tímu: Matej Mika, Jakub Drahňovský, Ján Paľo, Branislav Kaššaj, Tomáš Ščerbák, Marko Kotora, Samuel Jenčik, Samuel Maľar, Samuel Halas, Šimon Repel
       </>
     },
     {
       name: 'Hra v 3D',
       schoolName: 'Gymnázium Pavla Horova, Masarykova 1, Michalovce',
-      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
+      imageTitul:'./projects/gameMiaami/miamiPalms.jpeg',
       description: <>
         <br></br>
         V našom projekte sa zameriame na vývoj počítačovej hry v 3D prostredí. Upriamime sa na arkádu - hru s postupne rastúcou náročnosťou.
@@ -121,22 +121,24 @@ function CarouselComponent() {
     },
     {
       name: 'METEO lab',
-      schoolName: 'Gymnázium, Ľ: Štúra 26, 07101 Michalovce',
-      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
+      schoolName: 'Gymnázium, Ľ: Štúra 26, Michalovce',
+      imageTitul:'./projects/meteoLab/meteoLab.png',
       description: <>
         <br></br>
-        Naším cieľom je prepojiť informatiku, geografiu a fyziku pri zostrojení meteorologickej stanice a zbere dát z tejto stanice. Následne spracovanie získaných dát a naprogramovanie apky pre METEOstanicu.
-        <br></br>Pri možnosti vyrobenia viacerých staníc rozmiestnenie v areály školy a v areály družobných škôl. Následný zber údajov by vytvoril okrem iného mapy sledovaných javov (mapa teploty, vlhkosti, smeru vetra).
-        <br></br>Cez aplikáciu by bolo možné prepojiť postupne stanice v ďalších miestach.
+        Cieľom projektu je zostavenie a naprogramovanie meteostanice a sprístupnenie nameraných údajov prostredníctvom webovej aplikácie. 
+        <br></br><br></br>Použili sme dosku ESP32 a snímač DHT22 (resp. DHT11) pre snímanie teploty a vlhkosti v miestnosti a snímač BME280 pre teplotu, vlhkosť a atmosférický tlak vonku. ESP32 cez Wifi sieť odosiela namerané údaje do Firebase. Zozbierané údaje sa zobrazujú pomocou webovej stránky – zobrazujú sa aktuálne údaje. Okrem toho vonkajšiu teplotu, relatívnu vlhkosť a tlak je možné zobraziť vo forme grafov a tiež v podobe tabuľky s dátumom a časom merania.  
+        <br></br> <br></br>Pre vonkajší snímač sme vytlačili krabičku na 3D tlačiarni, pre samotnú dosku a breadboard máme návrh krabičky pre 3D tlač. 
       </>
     },
     {
       name: 'Byť zelený je TOP',
-      schoolName: 'Gymnázium, Ľ: Štúra 26, 07101 Michalovce',
-      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
+      schoolName: 'Gymnázium, Ľ: Štúra 26, Michalovce',
+      imageTitul:'./projects/greenIsTop/greenEnergyLogo.png',
       description: <>
         <br></br>
-        Mobilná aplikácia bude slúžiť ako pomôcka uchádzačom o vodičský preukaz. Bude obsahovať základné otázky vo forme testu. Pomocou nich sa precvičia, otestujú svoje znalosti a odstránia prípadné vedomostné nedostatky.
+        Pre získavanie dát o ovzduší používame 2 microcontrollery ESP-32. Na každom ESP-32 je pripojený senzor teploty, vlhkosti vzduchu a snímač oxidu uhličitého. Pre zozbieranie dát používame Raspberry Pi, na ktorom je spustený Home Assistant. 
+
+        <br></br> <br></br>Home Assistant je operačný systém založený na Linuxe. Tento operačný systém sa využíva najmä pri automatizácii domov. Pomocou pluginu ESPHome sme naprogramovali obe microcontrollery ESP-32. Raspberry Pi komunikuje s microcontrollermi pomocou Wi-Fi siete. Home Assistant dáta s microcontrollerov spracuje a poskytuje hodnoty zo senzorov v reálnom čase. 
       </>
     }
   ]
