@@ -10,23 +10,28 @@ function CarouselComponent() {
     {
       name: 'Energia je budúcnosť sveta',
       schoolName: 'Gymnázium , Alejová 1',
+      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
       description:
         <>
           <br></br>
-          Študenti vytvoria interaktívnu mapu obnoviteľných zdrojov energie v širšom okolí. Produkt by mal byť výstupom projektu Erasmus+ "Energy is the future of the world".
+          Vytvorenie interaktívnej mapy obnoviteľných zdrojov na Slovensku s kalkulačkou na výpočet uhlíkovej stopy, ktorú ročne vyprodukuje škola. 
         </>
     },
     {
       name: 'Škola online',
       schoolName: 'Gymnázium, Opatovská cesta 7',
+      imageTitul:'./projects/onlineSkola/onlineSchool.jpeg',
       description: <>
         <br></br>
-        Monitorovanie teploty, svetla na chodbách v škole a následne publikovanie informácii na web. Cieľom je využitie IoT sád pre micro:bit a spoznávanie IoT technológie.
+        Hlavným zámerom nášho projektu je zmonitorovať spotrebu tepla a energie a to meraním teplota a svietenie svetiel v miestnostiach našej školy.
+        <br></br>Cieľom je znížiť spotrebu energií a tým prispieť aj k nižším nákladom na prevádzke školy. Meranie dát prebehne pomocou ESP32 vo vybraných miestnostiach školy.  Spracovanie a vizualizácia dát prebehne v prostredí note-RED a grafická úprava a vizualizácia samotných výsledkov bude v prostredí FIGMA.
+        <br></br>Výstup z meraní bude možné sledovať na monitore vo vstupnej haly školy a súčasne budú aktualizované na stránke školy. Pomocnú ruku pre samotných činnostiach na projekte nám podajú študenti z TUKE a odborné oko nad projektom bude držať firma GlobalLogic.  
       </>
     },
     {
       name: 'Inteligentná permakultúrna záhrada',
       schoolName: 'Gymnázium P.J.Šafárika',
+      imageTitul:'./projects/inteligentGarden/inteligentGarden.png',
       description:
         <>
           <br></br>
@@ -40,15 +45,21 @@ function CarouselComponent() {
     {
       name: 'Aplikácia prvej pomoci',
       schoolName: 'Gymnázium Trebišovská ',
+      imageTitul:'./projects/help/help.png',
       description:
         <>
           <br></br>
-          Mobilná aplikácia prvej pomoci bude vždy po ruke, keď ju bude treba. Napriek tomu, že každý z nás by mal ovládať poskytnutie prvej pomoci, my si uvedomujeme, že v krízových situáciách môže človek zažiť šok a všetko zabudnúť. <br></br>Táto aplikácia by poskytovala podrobný návod na zvládnutie rôznych situácií. Sprevádzala by nás všetkými potrebnými krokmi.
+          Stále je veľa ľudí, ktorí nevedia správne poskytnúť prvú pomoc.  
+
+          <br></br><br></br>Sú aj ľudia, ktorí podľahnú stresovej situácii, v ktorej sa pri poskytovaní prvej pomoci nachádzajú a aj napriek znalostiam poskytnutia prvej pomoci, môže u nich dôjsť k bloku a v danej chvíli nebudú vedieť prvú pomoc poskytnúť.  
+
+          <br></br><br></br>Táto aplikácia slúži ako pomocný návod pri poskytovaní prvej pomoci alebo aj ako učebný materiál. Aplikácia sprevádza užívateľa pri poskytovaní prvej pomoci pri rôznych typoch zranenia (od menej vážnych až po vážne). 
         </>
     },
     {
       name: 'Mobilná aplikácia - testy na autoškolu',
       schoolName: 'Gymnázium Trebišovská ',
+      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
       description:
         <>
           <br></br>
@@ -58,6 +69,7 @@ function CarouselComponent() {
     {
       name: 'Kvalita vzduchu v učebniach',
       schoolName: 'Gymnázium, Komenského 32',
+      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
       description:
         <>
           <br></br>
@@ -70,6 +82,7 @@ function CarouselComponent() {
     {
       name: 'Chémia jednoduchšie',
       schoolName: 'Gymnázium, Komenského 32',
+      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
       description: <>
         <br></br>
         "Tím: Ivo Micišin, Patrik Ragan, Dávid Toma, René Demjan, Matej Janok<br></br>
@@ -89,6 +102,7 @@ function CarouselComponent() {
     {
       name: 'Fitko v mobile',
       schoolName: 'Gymnázium Pavla Horova, Masarykova 1, Michalovce',
+      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
       description: <>
         <br></br>
         "Cieľom nášho projektu je 3D vizualizácia fitka, rozmiestnenie  a návod na použitie strojov, ktoré sa nachádzajú vo fitness centre.
@@ -98,6 +112,7 @@ function CarouselComponent() {
     {
       name: 'Hra v 3D',
       schoolName: 'Gymnázium Pavla Horova, Masarykova 1, Michalovce',
+      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
       description: <>
         <br></br>
         V našom projekte sa zameriame na vývoj počítačovej hry v 3D prostredí. Upriamime sa na arkádu - hru s postupne rastúcou náročnosťou.
@@ -107,6 +122,7 @@ function CarouselComponent() {
     {
       name: 'METEO lab',
       schoolName: 'Gymnázium, Ľ: Štúra 26, 07101 Michalovce',
+      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
       description: <>
         <br></br>
         Naším cieľom je prepojiť informatiku, geografiu a fyziku pri zostrojení meteorologickej stanice a zbere dát z tejto stanice. Následne spracovanie získaných dát a naprogramovanie apky pre METEOstanicu.
@@ -117,6 +133,7 @@ function CarouselComponent() {
     {
       name: 'Byť zelený je TOP',
       schoolName: 'Gymnázium, Ľ: Štúra 26, 07101 Michalovce',
+      imageTitul:'./projects/EnergiaBuducnistSvetla/Energia buducnost sveta pict.jpg',
       description: <>
         <br></br>
         Mobilná aplikácia bude slúžiť ako pomôcka uchádzačom o vodičský preukaz. Bude obsahovať základné otázky vo forme testu. Pomocou nich sa precvičia, otestujú svoje znalosti a odstránia prípadné vedomostné nedostatky.

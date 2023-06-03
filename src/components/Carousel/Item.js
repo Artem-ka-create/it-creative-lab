@@ -21,8 +21,7 @@ function Item( property ){
         <>
         <div className="card">
             <img className="product--image"
-            src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/92ffa007-3c41-4610-bb4c-6dcc831515ef/court-borough-low-2-se-big-kids-shoes-5n5Wzk.png" alt="prods"/>
-            
+            src={property.item.imageTitul} alt={property.item.imageTitul}/>
             <h3 style={{marginTop:'20px',height:'50px'}}>{property.item.name}</h3>
             <p className="price">{property.item.schoolName}</p>
             
@@ -35,7 +34,7 @@ function Item( property ){
             <Dialog draggable={false} header={property.item.name} visible={visible} style={{ width: '80vw', height:'700px' }} onHide={() => setVisible(false)} footer={footerContent}>
                 <div style={{margin:'20px'}}>
                     <p className="m-0">
-                        <b>Description:</b> <br/>
+                        <b>Popis projektu:</b> <br/>
                         {property.item.description}
                     </p>
 
