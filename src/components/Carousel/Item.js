@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
-import VideoPlayer from '../VideoPlayerComponent/VideoPlayerComponent';
 
 
 
@@ -37,8 +36,6 @@ function Item( property ){
                         <b>Popis projektu:</b> <br/>
                         {property.item.description}
                     </p>
-
-                    <VideoPlayer/>
                 </div>
                 
 
